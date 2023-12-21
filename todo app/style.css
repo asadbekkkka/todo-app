@@ -1,0 +1,145 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tab_info .container .tab .tablinks{
+  padding: 20px 40px;
+  background-color:#F1ECE6;
+  transition: .7s all ease-in-out;
+  color:#323232;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.tab_info .container .tab .tablinks:hover{
+  background-color:#D98326;
+}
+.tab_info .container .tab .tablinks:active{
+  background-color:#D98326;
+}
+.tab_info .container .tabcontent h1{
+  color:#323232;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header{
+  display: flex;
+  justify-content: center;
+  background:#F1ECE6;
+  padding: 20px 0;
+}
+.input{
+  padding: 59px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.input input{
+  border-radius: 50px 0 0 50px;
+  background:#F1ECE6;
+  color: #969696;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  outline: none;
+  padding: 25px 450px 20px 40px;
+  margin-bottom: 40px;
+  flex: 1;
+}
+.input input::placeholder{
+  color: #4e4e4e;
+}
+.input button{
+  border-radius: 0px 50px 50px 0px;
+  background:#76B7CD;
+  color: #F3F3F3;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  padding: 16px;
+  border: none;
+  outline: none;
+  margin-left: -4px;
+  transition: .7s all ease-in-out;
+  cursor: pointer;
+}
+section button:hover{
+  background-color: #D98326;
+}
+.tabcontent ul li{
+  color: #969696;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style: none;
+  user-select: none;
+  padding: 12px 0 12px 36px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.tabcontent ul li::before{
+  content: '';
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-image: url(images/unchecked-circle.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 1px;
+}
+.tabcontent ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+.tabcontent ul li.checked::before{
+  background-image: url(images/image_processing20210616-28548-184w4eh.png);
+}

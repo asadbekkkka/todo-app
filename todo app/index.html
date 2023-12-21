@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+      <div class="container">
+        <div class="header">
+          <img src="svg/todo_app_logo.svg" alt="todo app logo">
+        </div>
+      </div>
+    </header>  
+    
+    <section class="input">
+    <div class="container"> 
+      <input type="text" id="input-box" placeholder="What do you need to do?">
+      <button onclick="AddTask()" type="submit">Add</button>
+    </div>
+    </section>
+    
+    <section class="tab_info">
+    <div class="container">
+      <div class="tab">
+        <button class="tablinks" onclick="openProgress(event, 'All')">All</button>
+        <!-- <button class="tablinks" onclick="openProgress(event, 'Progress')">Progress</button>
+        <button class="tablinks" onclick="openProgress(event, 'Done')">Done</button> -->
+      </div>
+
+      <div id="All" class="tabcontent">
+          <ul id="input-list">
+            <!-- <li class="checked">task 1</li>
+            <li>task 2</li>
+            <li>task 3</li> -->
+          </ul>
+      </div>
+            
+      <!-- <div id="Progress" class="tabcontent">
+        <h3>Progress</h3>
+      </div>
+
+      <div id="Done" class="tabcontent">
+        <h3>Done</h3>
+      </div> -->
+
+      </div>
+    </div>
+   </section>
+
+   <script src="main.js"></script>
+</body>
+</html>
